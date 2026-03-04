@@ -1,10 +1,16 @@
-h1{
-    color: black;
-    text-align: center;
+h1 {
+  color: black;
+  text-align: center;
 }
-body{
-    background-color: aqua;
+
+body {
+  background-color: aqua;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+/* Navigation */
 nav {
   display: flex;
   justify-content: center;
@@ -22,18 +28,93 @@ nav {
 .nav-right a:hover {
   color: aqua;
 }
+
+/* Product Section */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.image-item {
+  flex: 1 1 200px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  max-width: 250px; /* keeps all cards same width */
+}
+
+.image-item img {
+  width: 100%;
+  height: 200px; /* fixed height for uniform size */
+  object-fit: cover; /* crops nicely without distortion */
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.image-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.gallery-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* WhatsApp Button */
+.know-more-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.know-more-btn:hover {
+  background-color: #5c614a;
+}
+
+/* Footer */
 footer {
-  background-color: #222;     
-  color: #fff;                  
-  text-align: center;         
-  padding: 15px 0;             
-  font-size: 14px;                        
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
   left: 0;
-  width: 100%;       
+  width: 100%;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
 }
+
 footer a {
-  color: #ffcc00;              
+  color: #ffcc00;
   text-decoration: none;
 }
 
